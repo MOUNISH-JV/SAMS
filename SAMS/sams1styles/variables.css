@@ -1,0 +1,47 @@
+:root {
+    /* Colors */
+    --color-primary: #1b4332;
+    --color-primary-light: #2d6a4f;
+    --color-secondary: #40916c;
+    --color-accent: #95d5b2;
+    --color-background: #f8faf8;
+    --color-surface: #ffffff;
+    --color-text: #1b2421;
+    --color-text-light: #2d3f36;
+    --color-border: rgba(0, 0, 0, 0.1);
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+    --gradient-surface: linear-gradient(180deg, var(--color-surface), #f8faf8);
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --shadow-focus: 0 0 0 4px rgba(27, 67, 50, 0.1);
+    
+    /* Border Radius */
+    --radius-sm: 6px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    
+    /* Typography */
+    --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    --line-height-normal: 1.5;
+    --line-height-heading: 1.2;
+    
+    /* Transitions */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Layout */
+    --container-max-width: 1400px;
+    --header-height: 4rem;
+  }

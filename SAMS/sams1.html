@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriMonitor - Sustainable Agriculture Monitoring System</title>
+    <link rel="icon" href="images/image.png">
+    <link rel="stylesheet" href="/SAMS/sams1.css">
+    <link rel="stylesheet" href="sams1styles/comonents.css">
+    <link rel="stylesheet" href="sams1styles/layouts.css">
+    <link rel="stylesheet" href="sams1styles/main.css">
+    <link rel="stylesheet" href="sams1styles/utilities.css">
+    <link rel="stylesheet" href="sams1styles/variables.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar shadow-lg">
+        <div class="container flex items-center justify-between">
+            <a href="#" class="logo text-xl font-bold">
+                🌱 AgriMonitor
+            </a>
+            <div class="nav-links flex gap-3">
+                <a href="#farmers">👨‍🌾 Farmers</a>
+                <a href="#farms">🏡 Farms</a>
+                <a href="#crops">🌾 Crops</a>
+                <a href="#irrigation">💧 Irrigation</a>
+                <a href="#pesticides">🧪 Pesticides</a>
+                <a href="#alerts">🔔 Alerts</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5">
+        <section class="hero card mb-5" style="background-color: rgba(45, 90, 39, 0.9);">
+            <h1 class="text-2xl font-bold mb-3">Sustainable Agriculture Monitoring System</h1>
+            <p class="text-lg mb-4" >Track, analyze, and optimize your agricultural practices for a sustainable future</p>
+            <div class="flex gap-2">
+                <span class="badge">Real-time Monitoring</span>
+                <span class="badge">Data Analytics</span>
+                <span class="badge">Sustainable Practices</span>
+            </div>
+        </section>
+
+        <div class="grid grid-2 gap-3">
+            <section id="farmers" class="card">
+                <h2 class="text-xl font-semibold mb-4">👨‍🌾 Farmer Registration</h2>
+                <form class="form-group">
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-input" placeholder="Enter farmer's name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Contact Number</label>
+                        <input type="tel" class="form-input" placeholder="+91 0000 000 000" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-input" placeholder="email@example.com" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register Farmer</button>
+                </form>
+            </section>
+
+            <section id="farms" class="card">
+                <h2 class="text-xl font-semibold mb-4">🏡 Farm Registration</h2>
+                <form class="form-group">
+                    <div class="mb-3">
+                        <label class="form-label">Farm Name</label>
+                        <input type="text" class="form-input" placeholder="Enter farm name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Size (Acres)</label>
+                        <input type="number" class="form-input" placeholder="Enter farm size" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Location</label>
+                        <input type="text" class="form-input" placeholder="City, State" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Soil Type</label>
+                        <select class="form-input">
+                            <option value="">Select soil type</option>
+                            <option value="loamy">Loamy</option>
+                            <option value="sandy">Sandy</option>
+                            <option value="clay">Clay</option>
+                            <option value="silt">Silt</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register Farm</button>
+                </form>
+            </section>
+        </div>
+
+        <div class="grid grid-2 gap-3 mt-4">
+            <section id="crops" class="card">
+                <h2 class="text-xl font-semibold mb-4">🌾 Crop Management</h2>
+                <form class="form-group">
+                    <div class="mb-3">
+                        <label class="form-label">Crop Type</label>
+                        <select class="form-input">
+                            <option value="">Select crop type</option>
+                            <option value="wheat">Wheat</option>
+                            <option value="corn">Corn</option>
+                            <option value="rice">Rice</option>
+                            <option value="soybean">Soybean</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Planting Date</label>
+                        <input type="date" class="form-input" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Expected Harvest Date</label>
+                        <input type="date" class="form-input" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Expected Yield (tons/acre)</label>
+                        <input type="number" step="0.1" class="form-input" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Crop</button>
+                </form>
+            </section>
+
+            <section id="irrigation" class="card">
+                <h2 class="text-xl font-semibold mb-4">💧 Irrigation Methods</h2>
+                <form class="form-group">
+                    <div class="mb-3">
+                        <label class="form-label">Method Type</label>
+                        <select class="form-input">
+                            <option value="">Select irrigation method</option>
+                            <option value="drip">Drip Irrigation</option>
+                            <option value="sprinkler">Sprinkler System</option>
+                            <option value="flood">Flood Irrigation</option>
+                            <option value="center-pivot">Center Pivot</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Water Usage (liters/hour)</label>
+                        <input type="number" class="form-input" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Schedule</label>
+                        <select class="form-input">
+                            <option value="">Select schedule</option>
+                            <option value="daily">Daily</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="custom">Custom</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Set Irrigation</button>
+                </form>
+            </section>
+        </div>
+
+        <div class="grid grid-2 gap-3 mt-4">
+            <section id="pesticides" class="card">
+                <h2 class="text-xl font-semibold mb-4">🧪 Pesticide Usage</h2>
+                <form class="form-group">
+                    <div class="mb-3">
+                        <label class="form-label">Pesticide Name</label>
+                        <input type="text" class="form-input" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Application Date</label>
+                        <input type="date" class="form-input" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Quantity (liters)</label>
+                        <input type="number" step="0.1" class="form-input" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Target Pest</label>
+                        <input type="text" class="form-input" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Record Usage</button>
+                </form>
+            </section>
+
+            <section id="fertilizers" class="card">
+                <h2 class="text-xl font-semibold mb-4">🌿 Fertilizer Usage</h2>
+                <form class="form-group">
+                    <div class="mb-3">
+                        <label class="form-label">Fertilizer Type</label>
+                        <select class="form-input">
+                            <option value="">Select type</option>
+                            <option value="nitrogen">Nitrogen</option>
+                            <option value="phosphorus">Phosphorus</option>
+                            <option value="potassium">Potassium</option>
+                            <option value="organic">Organic</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Application Date</label>
+                        <input type="date" class="form-input" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Quantity (kg/acre)</label>
+                        <input type="number" step="0.1" class="form-input" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Record Usage</button>
+                </form>
+            </section>
+        </div>
+
+        <section id="alerts" class="card mt-4">
+            <h2 class="text-xl font-semibold mb-4">🔔 System Alerts</h2>
+            <div class="grid grid-1 gap-2">
+                <div class="alert alert-warning">⚠️ High water usage detected on Farm A - 20% above normal</div>
+                <div class="alert alert-success">📊 Crop yield prediction: 15% increase expected</div>
+                <div class="alert alert-warning">⚠️ Pesticide application due for Corn field B</div>
+                <div class="alert alert-success">🌱 Optimal soil conditions detected for planting</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-5 py-4 bg-primary">
+        <div class="container">
+            <div class="grid grid-4 gap-3">
+                <div>
+                    <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
+                    <a href="#" class="block mb-2">About Us</a>
+                    <a href="#" class="block mb-2">Contact</a>
+                    <a href="#" class="block mb-2">Privacy Policy</a>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-3">Resources</h3>
+                    <a href="#" class="block mb-2">Documentation</a>
+                    <a href="#" class="block mb-2">Support</a>
+                    <a href="#" class="block mb-2">API Access</a>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-3">Features</h3>
+                    <a href="#" class="block mb-2">Data Analytics</a>
+                    <a href="#" class="block mb-2">Reporting</a>
+                    <a href="#" class="block mb-2">Integrations</a>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-3">Connect</h3>
+                    <a href="#" class="block mb-2">Twitter</a>
+                    <a href="#" class="block mb-2">LinkedIn</a>
+                    <a href="#" class="block mb-2">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
